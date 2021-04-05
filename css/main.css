@@ -67,7 +67,21 @@ h3 {
 .jimi-hendrix-rip {
 }
 .jimi-hendrix-age {
+  z-index: 100;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  background-image: url('/img/2052150.svg');
+  /* background-color: chartreuse; */
+  background-repeat: no-repeat;
+  background-size: 40% 70%;
+  /* margin-bottom: -5rem; */
+  /* padding-bottom: 5rem; */
+  /* background-attachment: fixed; */
+  background-position: 50% 115%;
+  /* background-size: cover; */
+  opacity: 0.5;
 }
+
 .jimi-hendrix-right-pic {
   z-index: 10;
   grid-column: 7/12;
