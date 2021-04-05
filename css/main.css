@@ -41,7 +41,7 @@ h3 {
   grid-template-rows: repeat(6, 1fr);
 }
 
-.jimi-hendrix-main-pic {
+.jimi-hendrix-main-background {
   grid-column: 1/-1;
   grid-row: 1/-1;
   background-image: linear-gradient(rgb(255, 139, 159), rgb(52, 52, 245));
@@ -60,7 +60,6 @@ h3 {
   color: white;
   z-index: 100;
   font-size: 15vh;
-  /* line-height: 130px; */
   text-transform: uppercase;
   padding-left: 4rem;
   font-weight: 600;
@@ -75,14 +74,10 @@ h3 {
 .jimi-hendrix-name-2 {
   grid-row: 2/4;
   grid-column: 1/7;
-  /* margin: -4rem; */
 }
 
 .jimi-hendrix-quote {
   font-size: 3vh;
-  /* background-color: white; */
-  /* grid-row: 3/6; */
-  /* grid-column: 1/7; */
 }
 
 .jimi-hendrix-quote {
@@ -94,39 +89,47 @@ h3 {
   overflow: hidden;
   line-height: 60px;
 }
+
 .jimi-hendrix-rip {
-}
-.jimi-hendrix-age {
+  grid-column: 1/5;
+  grid-row: 6/7;
+  font-size: 3.5rem;
+  letter-spacing: 0.7rem;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  color: white;
   z-index: 100;
+}
+
+.jimi-hendrix-age {
+  z-index: 1000;
   grid-column: 1/-1;
   grid-row: 1/-1;
   background-image: url('/img/2052150.svg');
-  /* background-color: chartreuse; */
   background-repeat: no-repeat;
   background-size: 40% 70%;
-  /* margin-bottom: -5rem; */
-  /* padding-bottom: 5rem; */
-  /* background-attachment: fixed; */
   background-position: 50% 115%;
-  /* background-size: cover; */
   opacity: 0.5;
+}
+
+.jimi-hendrix-right-background {
+  z-index: 100;
+  grid-column: 7/12;
+  grid-row: 2/-1;
+  background-image: linear-gradient(to bottom right, rgb(250, 137, 156), white);
+  border-top-right-radius: 5rem;
+  border-top-left-radius: 5rem;
 }
 
 .jimi-hendrix-right-pic {
   z-index: 10;
-  grid-column: 7/12;
-  grid-row: 2/-1;
-
-  /* background-image: linear-gradient(to bottom right, rgb(250, 137, 156), white); */
-
+  height: 100%;
   background-image: url('/img/img-right.jpg');
   background-size: cover;
-  /* opacity: 0.5; */
-
+  opacity: 0.5;
   background-position: top;
   border-top-right-radius: 5rem;
   border-top-left-radius: 5rem;
-  /* overflow: hidden; */
 }
 
 @media screen and (min-width: 768px) {
