@@ -108,8 +108,8 @@ h3 {
   grid-row: 1/-1;
   background-image: url('/img/2052150.svg');
   background-repeat: no-repeat;
-  background-size: 40% 70%;
-  background-position: 50% 115%;
+  background-size: 50% 78%;
+  background-position: 50% 127%;
   opacity: 0.5;
 }
 
@@ -131,6 +131,25 @@ h3 {
   background-position: top;
   border-top-right-radius: 5rem;
   border-top-left-radius: 5rem;
+}
+
+
+.jimi-hendrix-footer-link{
+  grid-column: 1/-1;
+  height: 50px;
+  /* width: 100vw; */
+  background-color: rgb(9, 0, 34);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+a{
+  text-decoration: none !important;
+  color: antiquewhite;
+
 }
 
 @media screen and (max-width: 1384px) {
@@ -165,7 +184,13 @@ h3 {
   }
 
   .jimi-hendrix-rip {
-    display: none;
+    /* display: none; */
+    grid-column: 1/1;
+    grid-row: 2/3;
+    z-index: 1000;
+    align-self: end;
+    font-size: 10rem;
+    color: black;
   }
 
   .jimi-hendrix-age {
@@ -186,6 +211,7 @@ h3 {
     line-height: 20vw;
   }
 
+  .jimi-hendrix-rip ,
   .jimi-hendrix-quote {
     font-size: 10vw;
     line-height: 13vw;
