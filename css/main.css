@@ -34,6 +34,10 @@ h1 {
 h3 {
 }
 
+#img-caption {
+  display: none;
+}
+
 .jimi-hendrix-main {
   height: 100vh;
   display: grid;
@@ -89,6 +93,8 @@ h3 {
   padding-left: 4rem;
   overflow: hidden;
   line-height: 60px;
+  color: white;
+  z-index: 100;
 }
 
 .jimi-hendrix-rip {
@@ -106,11 +112,11 @@ h3 {
   z-index: 1000;
   grid-column: 1/-1;
   grid-row: 1/-1;
-  background-image: url('/img/2052150.svg');
+  background-image: url('/img/27.svg');
   background-repeat: no-repeat;
-  background-size: 50% 78%;
-  background-position: 50% 127%;
-  opacity: 0.5;
+  background-size: 150% 150%;
+  background-position: 28% 43%;
+  opacity: 0.3;
 }
 
 .jimi-hendrix-right-background {
@@ -127,14 +133,15 @@ h3 {
   height: 100%;
   background-image: url('/img/img-right.jpg');
   background-size: cover;
-  opacity: 0.5;
   background-position: top;
+  opacity: 0.5;
   border-top-right-radius: 5rem;
   border-top-left-radius: 5rem;
+  box-shadow: 15px -5px 21px -16px rgba(0, 0, 0, 0.75);
+  max-width: 100%;
 }
 
-
-.jimi-hendrix-footer-link{
+.jimi-hendrix-footer-link {
   grid-column: 1/-1;
   height: 50px;
   /* width: 100vw; */
@@ -146,10 +153,9 @@ h3 {
   font-size: 1.4rem;
 }
 
-a{
+a {
   text-decoration: none !important;
   color: antiquewhite;
-
 }
 
 @media screen and (max-width: 1384px) {
@@ -177,7 +183,7 @@ a{
   .jimi-hendrix-quote {
     grid-column: 1/1;
     grid-row: 1/2;
-    font-size: 10rem;
+    font-size: 6rem;
     line-height: 10rem;
     align-self: end;
     padding-bottom: 2rem;
@@ -203,17 +209,16 @@ a{
     grid-row: 2/3;
   }
 
+  @media screen and (max-width: 756px) {
+    .jimi-hendrix-name-1 {
+      font-size: 20vw;
+      line-height: 20vw;
+    }
 
-
-@media screen and (max-width: 756px) {
-  .jimi-hendrix-name-1 {
-    font-size: 20vw;
-    line-height: 20vw;
-  }
-
-  .jimi-hendrix-rip ,
-  .jimi-hendrix-quote {
-    font-size: 10vw;
-    line-height: 13vw;
+    .jimi-hendrix-rip,
+    .jimi-hendrix-quote {
+      font-size: 8vw;
+      line-height: 12vw;
+    }
   }
 }
