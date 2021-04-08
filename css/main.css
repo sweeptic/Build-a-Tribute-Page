@@ -48,7 +48,7 @@ h3 {
 .jimi-hendrix-main-background {
   grid-column: 1/-1;
   grid-row: 1/-1;
-  background-image: linear-gradient(rgb(255, 139, 159), rgb(52, 52, 245));
+  background-image: linear-gradient(rgb(197, 193, 194), rgb(0, 0, 0));
   height: 100vh;
 }
 
@@ -69,10 +69,10 @@ h3 {
 .jimi-hendrix-name-1 {
   color: white;
   z-index: 100;
-  font-size: 15rem;
+  font-size: 10rem;
   text-transform: uppercase;
   padding-left: 4rem;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 150px;
   overflow: hidden;
 }
@@ -83,9 +83,10 @@ h3 {
 }
 
 .jimi-hendrix-quote {
+  font-style: italic;
   margin-top: 4rem;
   font-size: 4rem;
-  grid-row: 3/6;
+  grid-row: 2/6;
   grid-column: 1/6;
   padding-left: 4rem;
   overflow: hidden;
@@ -97,10 +98,10 @@ h3 {
 .jimi-hendrix-rip {
   grid-column: 1/5;
   grid-row: 6/7;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   letter-spacing: 0.7rem;
   padding-left: 4rem;
-  padding-top: 4rem;
+  padding-top: 10rem;
   color: white;
   z-index: 100;
 }
@@ -120,7 +121,7 @@ h3 {
   z-index: 100;
   grid-column: 7/12;
   grid-row: 2/-1;
-  background-image: linear-gradient(to bottom right, rgb(250, 137, 156), white);
+  background-image: linear-gradient(to bottom right, rgb(79, 79, 79), white);
   border-top-right-radius: 5rem;
   border-top-left-radius: 5rem;
 }
@@ -141,7 +142,7 @@ h3 {
 .jimi-hendrix-footer-link {
   grid-column: 1/-1;
   height: 50px;
-  background-color: rgba(9, 0, 34, 0.171);
+  /* background-color: rgba(9, 0, 34, 0.171); */
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -151,12 +152,18 @@ h3 {
 
 a {
   text-decoration: none !important;
+  /* color: black; */
   color: antiquewhite;
 }
 
 @media screen and (max-width: 1384px) {
   .jimi-hendrix-age {
     display: none;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: black;
   }
 
   .jimi-hendrix-main {
@@ -188,7 +195,7 @@ a {
     grid-row: 2/3;
     z-index: 1000;
     align-self: end;
-    font-size: 10rem;
+    font-size: 3rem;
     color: black;
   }
 
