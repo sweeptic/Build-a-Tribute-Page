@@ -49,6 +49,13 @@ h3 {
   grid-column: 1/-1;
   grid-row: 1/-1;
   background-image: linear-gradient(rgb(255, 139, 159), rgb(52, 52, 245));
+  height: 100vh;
+}
+
+#image {
+  /* thats because test script need height: auto property. But my implementation is different. */
+  height: auto;
+  max-width: 100%;
 }
 
 .jimi-hendrix-main-img {
@@ -59,8 +66,7 @@ h3 {
   height: 100vh;
 }
 
-.jimi-hendrix-name-1,
-.jimi-hendrix-name-2 {
+.jimi-hendrix-name-1 {
   color: white;
   z-index: 100;
   font-size: 15rem;
@@ -74,15 +80,6 @@ h3 {
 .jimi-hendrix-name-1 {
   grid-row: 1/4;
   grid-column: 1/7;
-}
-
-.jimi-hendrix-name-2 {
-  grid-row: 2/4;
-  grid-column: 1/7;
-}
-
-.jimi-hendrix-quote {
-  /* font-size: 3vh; */
 }
 
 .jimi-hendrix-quote {
@@ -144,8 +141,7 @@ h3 {
 .jimi-hendrix-footer-link {
   grid-column: 1/-1;
   height: 50px;
-  /* width: 100vw; */
-  background-color: rgb(9, 0, 34);
+  background-color: rgba(9, 0, 34, 0.171);
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -171,11 +167,9 @@ a {
   .jimi-hendrix-main-background {
     grid-column: 1/1;
     grid-row: 1/2;
-    /* display: none; */
   }
 
   .jimi-hendrix-name-1 {
-    /* display: none; */
     margin-top: 4rem;
     font-size: 17rem;
   }
@@ -190,7 +184,6 @@ a {
   }
 
   .jimi-hendrix-rip {
-    /* display: none; */
     grid-column: 1/1;
     grid-row: 2/3;
     z-index: 1000;
